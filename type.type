@@ -1,0 +1,33 @@
+The purpose of this interface is that giving privileges to user depending on their user roles for connecting to the system. +New User button use for creating a new user. 
+
+When the developer click this button, it opens to New User login screen on the right side of the user information table. 
+
+Developer can fill this information with four fields which are Username, Display Name, Phone, Email. 
+
+Then User Roles part is a combo box. Developer can choose role for user which are Guest, Admin and SuperAdmin roles. These roles can be provided with different privileges such as: read, write,  execute or in database system delete, alter, modify etc. table privileges. 
+
+After that, enabled check box is usage for determining accessibility of user to the system. If enabled check box is clicked, user can access this system. However, if enabled check box is not clicked, user can not access to the system. 
+
+After developer click Save User button, it should be added to the left table depending on some rules :
+
+1- First rule is that all of the new user information should be filled, checked and chosen. If one of them is empty, system should give a warning message with red color on the related empty field.
+
+2- Second rule is that username should be unique and when developer write a username it should be check from the user information table. If username matches with the user information table, it should be written as "This username had already been used" 
+
+3- Third rule is that Display Name do not have to be an unique string.
+
+4- Forth rule is that Phone field can be used with phone number order formatting.
+
+5- Fifth rule is that Email field should be included valid extension and valid format. Depending on it, it should be given with warning message.
+
+After the developer entered this fields correctly and clicked Save User button, it should be added to the user information table and count should be incremented in related code part. Because ID field is given with incrementing method depending on Save User button is clicked and approved by system.
+
+User information table do not have to consist of all fields. It can be consist of ID which is given with count increment method depends on Save User button click and approve by system, User Name, Email and Enabled fields are displayed. 
+
+ID has a filter method and when the developer click on it, it can be displayed with ascending or descending format.
+
+Email has a filter method when the developer click on it, it can be displayed with ascending or descending string format alphabetically.
+
+Enabled has a filter method when the developer click on it, it can be displayed with ascending or descending string format and depending on click it first display true or false, and display lastly false or true. 
+
+System has a checkbox which is for hiding disabled users which their Enabled field is false. 
